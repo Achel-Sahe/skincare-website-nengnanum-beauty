@@ -1,9 +1,10 @@
 import React from 'react'
+import productImg from '../assets/product.png' ;
 
 const TabsCard = ({product}) => {
   return (
       <div className='card-wrapper'>
-          <img src="/src/assets/product.png" alt="" />
+          <img src={productImg} alt="" />
           <button>{ product }</button>
           <button>BUY</button>
     </div>

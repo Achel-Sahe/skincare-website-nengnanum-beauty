@@ -1,11 +1,12 @@
 import React from "react";
+import img from '../assets/assets-1.jpeg'
 
 const GeneralCards = () => {
   return (
     <div className="general-wrapper">
       <div className="generalCard-container">
         <div className="generalCard-img">
-          <img src="/src/assets/assets-1.jpeg" alt="" />
+          <img src={img} alt="" />
         </div>
         <div className="generalCard-article">
           <h2>Lorem, ipsum dolor.</h2>

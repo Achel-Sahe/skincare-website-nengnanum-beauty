@@ -12,9 +12,9 @@ function App() {
     <Router basename="/skincare-website-nengnanum-beauty/">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/articles" element={<Articles />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Router>

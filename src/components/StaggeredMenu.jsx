@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, {
   useCallback,
   useLayoutEffect,
@@ -485,14 +486,15 @@ export const StaggeredMenu = ({
               {items && items.length ? (
                 items.map((it, idx) => (
                   <li className="sm-panel-itemWrap" key={it.label + idx}>
-                    <a
+                    <Link
                       className="sm-panel-item"
-                      href={it.link}
+                      to={it.link}
                       aria-label={it.ariaLabel}
                       data-index={idx + 1}
+                      onClick={closeMenu}
                     >
                       <span className="sm-panel-itemLabel">{it.label}</span>
-                    </a>
+                    </Link>
                   </li>
                 ))
               ) : (
