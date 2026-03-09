@@ -64,3 +64,10 @@
 .blank {
   margin-bottom: 10rem;
 }
+
+@media screen and (max-width: 500px) {
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}

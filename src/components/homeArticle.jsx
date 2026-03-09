@@ -4,7 +4,7 @@ const HomeArticle = () => {
   return (
     <div className="home-article">
       <div className="gradient">
-        <div className="home-wrapper">
+        <div className="home-wrapper reveal">
           <h3>
             <p className="home-article-tagline"> Healthy Skin, Made Simple. </p>
           </h3>

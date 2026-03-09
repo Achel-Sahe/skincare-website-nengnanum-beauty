@@ -9,9 +9,9 @@ const menuItems = [
 ];
 
 const socialItems = [
-  { label: "Twitter", link: "https://twitter.com" },
-  { label: "GitHub", link: "https://github.com" },
-  { label: "LinkedIn", link: "https://linkedin.com" },
+  { label: "Facebook", link: "https://twitter.com" },
+  { label: "TikTok", link: "https://github.com" },
+  { label: "Shopee", link: "https://linkedin.com" },
 ];
 
 

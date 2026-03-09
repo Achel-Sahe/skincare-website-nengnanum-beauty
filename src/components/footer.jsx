@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="top-footer">
-        <div className="footer-description">
+        <div className="footer-description reveal reveal-delay-2">
           <h1>Nengnanum</h1>
           <p>
             Lorem, ipsum dolor. <br />
@@ -13,7 +13,7 @@ const Footer = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing.
           </p>
         </div>
-        <div className="footer-social">
+        <div className="footer-social reveal reveal-delay-3">
           <div className="icon">
             <a><i className="fa-brands fa-instagram"></i></a>
             <a><i className="fa-brands fa-tiktok"></i></a>
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
           </div>
-          <div className="bottom-footer">
+          <div className="bottom-footer reveal reveal-delay-4">
               <div className="bottom-footer-link">
                   <a href="#">Contact Us</a>
                   <a href="#">Site Map </a>

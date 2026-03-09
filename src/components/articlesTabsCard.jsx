@@ -25,15 +25,15 @@ const ArticlesTabsData = [
   {
     label: "Hydration",
     content: (
-      <>
+      <div >
         <ArticleBlog img={img2} title="Hydration Tips" subtitle="Hydration" isi="Proper hydration is essential for maintaining healthy skin. Learn how to keep your skin moisturized and glowing." />
-      </>
+      </div>
     )
   },
   {
     label: "Routine",
     content: (
-      <>
+      < >
         <ArticleBlog img={img3} title="Skincare Routine" subtitle="Routine" isi="Establishing a consistent skincare routine can help improve your skin's health and appearance. Discover the steps to create an effective routine" />
       </>
     )

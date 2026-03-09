@@ -16,9 +16,9 @@ const TabsSwitch = ({ tabs }) => {
   }, [activeIndex]);
 
   return (
-    <div className="tabs-container">
-      <h1 className="tabs-title">Explore topics</h1>
-      <div className="bloc-tabs">
+    <div className="tabs-container reveal reveal-delay-1">
+      <h1 className="tabs-title reveal reveal-delay-2">Explore topics</h1>
+      <div className="bloc-tabs reveal reveal-delay-3">
         {tabs.map((tab, index) => (
           <div
             key={index}
@@ -33,7 +33,7 @@ const TabsSwitch = ({ tabs }) => {
       </div>
 
       <div className="content-tabs">
-        <div className="content active-content">
+        <div className="content active-content reveal reveal-delay-4">
           {tabs[activeIndex].content}
         </div>
       </div>

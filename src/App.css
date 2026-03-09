@@ -314,7 +314,7 @@ b {
 }
 
 .tabs-container {
-  width: 80%;
+  width: 82%;
   margin: -6.2rem auto 10rem;
   backdrop-filter: blur(6px);
   box-shadow: 0px 0px 20px 1px rgba(163, 163, 163, 0.2);
@@ -381,7 +381,8 @@ b {
 
 .active-content {
   display: flex;
-  column-gap: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 
@@ -399,8 +400,10 @@ b {
 .article-wrapper {
   width: 80%;
   margin: auto;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
+  gap: 3.5rem;
+  flex-wrap: wrap;
 }
 
 .generalCard-container {
@@ -738,6 +741,7 @@ b {
 .products-header h2 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 
 .products-header p {
@@ -816,6 +820,10 @@ b {
   align-items: center;
   word-spacing: .2rem;
   letter-spacing: .02rem;
+}
+
+.first-simple-hidden {
+  display: none;
 }
 
 .simple-about-left {
@@ -952,4 +960,80 @@ b {
 
 .ingredients-card:hover img {
   transform: translateY(-6px) scale(1.03);
+}
+
+/* ! scroll reveal */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.2s; }
+.reveal-delay-2 { transition-delay: 0.4s; }
+.reveal-delay-3 { transition-delay: 0.6s; }
+.reveal-delay-4 { transition-delay: 0.8s; }
+.reveal-delay-5 { transition-delay: 1s; }
+.reveal-delay-6 { transition-delay: 1.2s; }
+
+/* ! scroll reveal */
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 78%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 75.5%;
+  }
+  .footer-description p,
+.bottom-footer {
+  font-size: 1.2rem;
+}
+.scroll-overlay {
+  height: 30rem;
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 63.5%;
+  }
+  .active-content {
+    justify-content: center;
+    row-gap: 4rem;
+  }
+  .bottom-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2rem;
+  }
+  .simple-about {
+    flex-direction: column;
+  }
+  .simple-about-left{
+    margin-top: 0;
+    width: 90%;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .simple-about  button {
+    margin: 0 auto;
+  }
+  .snd-simple-hidden{
+    display: none;
+  }
+  .first-simple-hidden {
+    display: block;
+    font-weight: 300;
+  }
 }

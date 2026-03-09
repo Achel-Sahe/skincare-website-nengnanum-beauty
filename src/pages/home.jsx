@@ -9,10 +9,14 @@ import BottomHero from "../components/bottomHero";
 import Footer from "../components/footer";
 import NavbarMenu from "../components/navbarMenu";
 import HomeTabsCard from "../components/homeTabsCard";
-
+import SmoothScroll from "../components/smoothScroll";
+import ScrollReveal from "../components/scrollReveal";
 const Home = () => {
   return (
     <div>
+      <SmoothScroll />
+      <ScrollReveal/>
+      {/* page components */}
       <NavbarMenu />
       <Hero
         h1='Softness You Can Feel, Confidence You Can See'

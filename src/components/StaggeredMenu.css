@@ -348,14 +348,19 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 740px) {
   .staggered-menu-panel {
     width: 100%;
     left: 0;
     right: 0;
+  }
+  .sm-panel-item {
+      font-size: 3.5rem;
+      line-height: 2;
   }
 
   .staggered-menu-wrapper[data-open] .sm-logo-img {
     filter: invert(100%);
   }
 }
+
